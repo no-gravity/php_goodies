@@ -28,3 +28,8 @@ apt install valgrind
 cd /tmp
 callgrind_annotate cachegrind.out... > profile.txt
 ```
+
+
+## Trace
+
+Setting xdebug.mode=trace will create a trace instead of a profile. The trace seems to be a log of function calls with the time and another number. Maybe memory usage. This file is humanreadable, so valgring is not necessary to read it.
